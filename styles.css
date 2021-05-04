@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Harmattan&display=swap');
 
 body {
     font-family: 'Russo One', sans-serif;
@@ -36,7 +37,7 @@ nav {
     align-items: center;
     height: 100%;
     padding: 0px 0px 0px 50px;
-    
+    pointer-events: none;
 }
 
 nav ul {
@@ -54,10 +55,10 @@ nav ul li a:visited,
 nav ul li a:active,
 nav ul li a:focus {
     color: white;
+    transition: color 0.2s;
 }
 
 nav ul li a:hover {
-
     color: black;
 }
 
@@ -101,7 +102,12 @@ nav ul li a:hover {
 }
 
 .intro a {
-    color: white;
+    color: white;    
+    transition: color 0.2s;
+}
+
+.intro a:hover {
+    color: #57C1DD;
 }
 
 .card {
@@ -158,6 +164,51 @@ nav ul li a:hover {
 
 .special-card:hover .special-card-title{
     animation-name: none;
+}
+
+
+.bubble {
+    position: absolute;
+    background: #2c2c2c;
+    color:#ffffff;
+    font-family: 'Harmattan';
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    width: 330px;
+    height: 165px;
+    border-radius: 17px;
+    padding: 0px;
+
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-330px,70px);
+    transition: all 0.4s;
+    z-index: 100;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: transparent #2c2c2c;
+    border-width: 11px 0 11px 17px;
+    top: 50%;
+    right: -16px;
+    margin-top: -11px;
+}
+
+.special-card:hover .bubble{
+    opacity: 1;
+    transform: translate(-340px,70px);
+}
+
+.bubble .alert {
+    color:#fffed6;
+    font-size: 17px;
 }
 
 /* projects */
