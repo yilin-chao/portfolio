@@ -91,6 +91,7 @@ nav ul li a:hover {
 .intro {
     font-size: 26px;
     margin-left: 50px;
+    margin-right: 20px;
     transform: translateY(-40px);
 }
 
@@ -303,4 +304,197 @@ footer span {
 footer span a {
     margin-left: 20px;
     color: white;
+}
+
+/* first change */
+@media screen and (max-width: 965px) {
+    
+    .about {
+        height: 400px;
+    }
+    
+    .intro {
+        font-size: 24px;
+        transform: translateY(-35px);
+    }
+
+    .special-card {
+        width: 280px;
+        height: 230px;
+        font-size: 19px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 60px;
+        grid-row-gap: 70px;
+    
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+/* second change */
+@media screen and (max-width: 894px){
+    
+    .about {
+        height: 375px;
+    }
+    
+    .intro {
+        font-size: 23px;
+    }
+
+    .intro i {
+        font-size: 35px;
+    }
+
+    .special-card {
+        width: 260px;
+        height: 210px;
+        font-size: 17px;
+    }
+
+
+}
+
+/* third change */
+@media screen and (max-width: 834px){
+    .about {
+        height: 365px;
+    }
+    
+    .intro {
+        font-size: 21px;
+        transform: translateY(-30px)
+    }
+
+    .special-card {
+        width: 240px;
+        height: 190px;
+        font-size: 17px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+}
+
+/* fourth change */
+@media screen and (max-width: 758px){
+    .about {
+        height: 315px;
+    }
+    
+    .intro {
+        font-size: 18px;
+        transform: translateY(-20px)
+    }
+
+    .special-card {
+        width: 220px;
+        height: 170px;
+        font-size: 17px;
+    }
+}
+
+/* fifth change */
+@media screen and (max-width: 688px){
+    nav {
+        font-size: 18px;
+        height: 60px;
+    }
+
+    nav ul li{
+        margin-right: 40px;
+    }
+
+    .body-container {
+        top: 60px;
+    }
+
+    .intro {
+        font-size: 15px;
+        transform: translateY(-20px)
+    }
+
+    .special-card {
+        width: 200px;
+        height: 150px;
+        font-size: 15px;
+    }
+
+    .title {
+        margin: 0 50px 0 50px;
+    }
+
+
+    .line{
+        width: 1500px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .move-up{
+        transform: translateY(0px);
+    }
+}
+
+/* sixth change */
+@media screen and (max-width: 510px){
+    nav {
+        font-size: 14px;
+        height: 60px;
+    }
+
+    nav ul li{
+        margin-right: 18px;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .body-container {
+        top: 60px;
+    }
+
+    .about {
+        height: 220px;
+    }
+
+    .intro {
+        font-size: 12px;
+        transform: translateY(-5px);
+        margin-left: 20px;
+    }
+
+    .intro i {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .special-card {
+        width: 150px;
+        height: 110px;
+        font-size: 10px;
+        transform: translateY(20px);
+        border-radius: 10px;
+    }
+
+    .title{
+        font-size: 28px;
+    }
 }
